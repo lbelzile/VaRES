@@ -9,4 +9,4 @@ Depends: R (>= 2.15.0)
 Description: Computes Value at risk and expected shortfall, two most popular measures of financial risk, for over one hundred parametric distributions,  including all commonly known distributions.  Also computed are the corresponding probability density function and cumulative distribution function.
 License: GPL (>= 2)
 NeedsCompilation: no
-
+BugReports: https://github.com/lbelzile/VaRES/issues/
