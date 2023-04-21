@@ -44,6 +44,8 @@ esbetagumbel2(p, a=1, b=1, c=1, d=1)
 dbetagumbel2(x)
 pbetagumbel2(x)
 varbetagumbel2(x)
-#esbetagumbel2(x)
+\donttest{
+esbetagumbel2(x)
+}
 }
  

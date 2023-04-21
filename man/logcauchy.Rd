@@ -42,6 +42,8 @@ eslogcauchy(p, mu=0, sigma=1)
 dlogcauchy(x)
 plogcauchy(x)
 varlogcauchy(x)
-#eslogcauchy(x)
+\donttest{
+ eslogcauchy(x)
+}
 }
  

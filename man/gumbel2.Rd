@@ -41,6 +41,8 @@ esgumbel2(p, a=1, b=1)
 dgumbel2(x)
 pgumbel2(x)
 vargumbel2(x)
-#esgumbel2(x)
+\donttest{
+ esgumbel2(x)
+}
 }
  
