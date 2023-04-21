@@ -69,7 +69,7 @@ esaep(p, q1=1, q2=1, alpha=0.5)}
   \item{log.p}{if TRUE then log(cdf) are returned and quantiles are computed for exp(p)}
   \item{lower.tail}{if FALSE then 1-cdf are returned and quantiles are computed for 1-p}}
 \value{An object of the same length as \code{x}, giving the pdf or cdf values computed at \code{x} or an object of the same length as \code{p}, giving the values at risk or expected shortfall computed at \code{p}.}
-\references{S. Nadarajah, S. Chan and E. Afuecheta, An R Package for value at risk and expected shortfall, submitted}
+\references{Stephen Chan, Saralees Nadarajah & Emmanuel Afuecheta (2016). An R Package for Value at Risk and Expected Shortfall, Communications in Statistics - Simulation and Computation, 45:9, 3416-3434, \doi{10.1080/03610918.2014.944658}}
 \author{Saralees Nadarajah}
 \examples{x=runif(10,min=0,max=1)
 daep(x)
