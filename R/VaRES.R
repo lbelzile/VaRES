@@ -2002,7 +2002,7 @@ eslogcauchy=function (p, mu=0, sigma=1)
 	f=function (x) {varlogcauchy(x,mu=mu,sigma=sigma)}
         es=p
         for (i in 1:length(p)) {
-         integ=(1/p[i])*integrate(f,lower=0,upper=p[i],stop.on.error=FALSE)$value
+         integ=try((1/p[i])*integrate(f,lower=0,upper=p[i],stop.on.error=FALSE)$value, silent = TRUE)
          
          if(inherits(integ, "try-error")){
             es[i] <- Inf
@@ -3181,7 +3181,7 @@ esgumbel2=function (p, a=1, b=1){
 	f=function (x) {vargumbel2(x,a=a,b=b)}
         es=p
         for (i in 1:length(p)) {
-           integ=(1/p[i])*integrate(f,lower=0,upper=p[i],stop.on.error=FALSE)$value
+           integ=try((1/p[i])*integrate(f,lower=0,upper=p[i],stop.on.error=FALSE)$value, silent = TRUE)
            if(inherits(integ, "try-error")){
               es[i] <- Inf
            } else{
